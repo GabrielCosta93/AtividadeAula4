@@ -1,0 +1,101 @@
+<!doctype html>
+<html>
+<meta charset="utf-8">
+<title>
+    Atividade 3
+</title>
+<h1>
+    Informações Pessoais
+</h1>
+<form action="http://localhost:3003/usuarios" method="post">
+
+    <fieldset>
+        <legend>Cadastro do Cliente</legend>
+        <p>
+            <label for="nome">Nome:</label>
+            <input type="text" name="nome" required>
+        </p>
+        
+            <label for="tipo">Sexo:</label>
+        <div>
+            <input type="radio" name="tipo" value="Masculino">Masculino
+            <input type="radio" name="tipo" value="Feminino">Feminino
+        </div>
+        
+        <p>
+            <label for="numero">Idade:</label>
+            <input min="0" type="number" name="numero">
+        </p>
+        <p>
+            <label for="endereco">Endereço:</label>
+            <input type="text" name="">
+        </p>
+        <p>
+            <label for="cidade">Cidade:</label>
+            <input type="text" name="cidade">
+        </p>
+        <p>
+            <label for="estado">Estado:</label>
+            <select name="">
+                <option value="">UF</option>
+                <option value="">AC</option>
+                <option value="">AL</option>
+                <option value="">AP</option>
+                <option value="">AM</option>
+                <option value="">BA</option>
+                <option value="">CE</option>
+                <option value="">ES</option>
+                <option value="">GO</option>
+                <option value="">MA</option>
+                <option value="">MT</option>
+                <option value="">MS</option>
+                <option value="">MG</option>
+                <option value="">PA</option>
+                <option value="">PB</option>
+                <option value="">PR</option>
+                <option value="">PE</option>
+                <option value="">PI</option>
+                <option value="">RJ</option>
+                <option value="">RN</option>
+                <option value="">RS</option>
+                <option value="">RO</option>
+                <option value="">RR</option>
+                <option value="">SC</option>
+                <option value="">SP</option>
+                <option value="">SE</option>
+                <option value="">TO</option>
+                <option value="">DF</option>
+            </select>
+        </p>
+        <p>
+            <label for="cep">CEP:</label>
+            <input type="number" name="cep">
+        </p>
+        <p>
+            <label for="TelRes">Tel Res:</label>
+            <input type="tel" name="TelRes">
+        </p>
+        <p>
+            <label for="TelCel">Tel Cel:</label>
+            <input type="tel" name="TelCel">
+        </p>
+        <p>
+            <label for="email">Email:</label>
+            <input type="email" name="email">
+        </p>
+
+    </fieldset>
+    <button>Incluir</button>
+</form>
+
+</html>
+
+<style>
+    label {
+        display:inline;
+    }
+    div [type=radio] {
+        display: inline;
+    }
+   
+</style>
